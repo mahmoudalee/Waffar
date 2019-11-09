@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/title_home"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/h_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"/>
+
+
+    <TextView
+        android:id="@+id/cons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5000 KHz"
+        android:textSize="40sp"
+        android:layout_below="@id/logo"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/h_cons"/>
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="149 EGP"
+        android:textSize="40sp"
+        android:layout_below="@id/cons"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/h_balance"/>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Room 1"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/h_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"/>
+
+    <LinearLayout
+        android:id="@+id/containar"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Used"
+                android:textSize="30sp"
+                android:background="@drawable/r_titles"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Max"
+                android:textSize="30sp"
+                android:background="@drawable/r_titles"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="5000 KHz"
+                android:textSize="30sp"
+                android:background="@drawable/r_used"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="6000 KHz"
+                android:textSize="30sp"
+                android:background="@drawable/r_max"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Normal, Do you need the ChatBot?"
+        android:textSize="20sp"
+        android:layout_below="@id/containar"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/r_normal"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+
+
+</RelativeLayout>

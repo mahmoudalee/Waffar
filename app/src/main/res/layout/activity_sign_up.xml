@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logob"/>
+        <!-- User name Label -->
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <EditText android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Name"
+            android:background="@drawable/login_bg_txt"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginBottom="22dp"/>
+
+
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <EditText android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Email"
+            android:background="@drawable/login_bg_txt"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginBottom="22dp"/>
+
+        <EditText android:id="@+id/input_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/login_bg_txt"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginBottom="22dp"/>
+
+        <EditText android:id="@+id/input_cpass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:background="@drawable/login_bg_txt"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginBottom="22dp"/>
+
+        <!-- Password Label -->
+        <EditText android:id="@+id/input_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/login_bg_txt"
+            android:hint="Device ID"
+            android:autofillHints=""
+            android:gravity="center"/>
+
+        <Button
+            android:background="@drawable/login_bg_btn"
+            android:textColor="@color/white"
+            android:id="@+id/btn_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:padding="12dp"
+            android:text="Sign Up"
+            android:layout_gravity="center"/>
+
+        <TextView android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Already a member? Login"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
